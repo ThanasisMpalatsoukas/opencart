@@ -160,8 +160,6 @@ class ControllerMarketplaceMarketplace extends Controller {
 
 		$response = curl_exec($curl);
 
-		$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
 		curl_close($curl);
 
 		$response_info = json_decode($response, true);
